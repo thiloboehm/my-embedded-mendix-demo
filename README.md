@@ -2,6 +2,10 @@
 
 Self-contained vanilla JavaScript host app for loading the Mendix embedded runtime.
 
+## Live Demo
+
+- GitHub Pages: https://thiloboehm.github.io/my-embedded-mendix-demo/
+
 ## Runtime
 
 - Mendix runtime: `https://myembeddeddemoapp-sandbox.mxapps.io/`
@@ -22,6 +26,10 @@ Open `http://localhost:3000`.
 ```bash
 npm run build
 ```
+
+## Deployment
+
+This project deploys automatically to GitHub Pages on every push to the `main` branch via GitHub Actions.
 
 ## Embedding logic
 
