@@ -20,7 +20,7 @@ export default {
             preventAssignment: true,
             values: {
                 __DEFAULT_MENDIX_REMOTE_URL__: JSON.stringify(
-                    process.env.MENDIX_REMOTE_URL || "https://myembeddeddemoapp-sandbox.mxapps.io"
+                    process.env.MENDIX_REMOTE_URL || "https://tb100100.mendixcloud.com"
                 ),
             },
         }),

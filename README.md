@@ -8,8 +8,8 @@ Self-contained vanilla JavaScript host app for loading the Mendix embedded runti
 
 ## Runtime
 
-- Mendix runtime: `https://myembeddeddemoapp-sandbox.mxapps.io/`
-- Embedded bundle: `https://myembeddeddemoapp-sandbox.mxapps.io/dist/embedded-index.js`
+- Mendix runtime: `https://tb100100.mendixcloud.com/`
+- Embedded bundle: `https://tb100100.mendixcloud.com/dist/embedded-index.js`
 - Host app: `http://localhost:3000`
 
 ## Run
@@ -48,6 +48,6 @@ The host page owns the surrounding page. Mendix owns the embedded application.
 You can override the runtime URL before startup with:
 
 ```js
-window.__MENDIX_REMOTE_URL__ = "https://myembeddeddemoapp-sandbox.mxapps.io/";
+window.__MENDIX_REMOTE_URL__ = "https://tb100100.mendixcloud.com/";
 ```
 
