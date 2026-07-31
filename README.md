@@ -31,6 +31,23 @@ npm run build
 
 This project deploys automatically to GitHub Pages on every push to the `main` branch via GitHub Actions.
 
+## CORS Configuration (Mendix Runtime)
+
+For cross-origin embedding from GitHub Pages to work, configure CORS headers on the Mendix runtime endpoints (`/dist/embedded-index.js` and `/xas/`).
+
+Required headers:
+
+- `Access-Control-Allow-Origin: https://thiloboehm.github.io`
+- `Access-Control-Allow-Credentials: true`
+- `Access-Control-Allow-Methods: GET, POST, OPTIONS`
+- `Access-Control-Allow-Headers: Content-Type, Authorization, X-CSRF-Token, X-Requested-With`
+- `Vary: Origin`
+
+Important:
+
+- Return each CORS header exactly once (duplicate `Access-Control-Allow-Origin` caused browser CORS failures).
+- Do not use `*` for `Access-Control-Allow-Origin` when credentials are enabled.
+
 ## Embedding logic
 
 The host:
