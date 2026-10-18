@@ -132,9 +132,10 @@ const mountEmbeddedApp = async () => {
         unmount = await embeddedModule.render(embeddedHost, {
             remoteUrl: `${remoteUrl}/`,
             minHeight: "620px",
+/*
             parameters: {
                 Name: "Vanilla JavaScript"
-            },
+            },*/
         });
 
         clearError();
